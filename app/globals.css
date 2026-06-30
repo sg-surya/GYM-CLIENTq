@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@theme {
+  /* Premium Brand Typography */
+  --font-sans: var(--font-inter), sans-serif;
+  --font-display: var(--font-space-grotesk), sans-serif;
+  --font-bebas: var(--font-bebas-neue), sans-serif;
+
+  /* Premium Brand Colors */
+  --color-electric-red: #FF2E2E;
+  --color-matte-black: #0A0A0A;
+  --color-charcoal: #141414;
+  --color-metallic-silver: #CFCFCF;
+
+  /* Custom Transitions */
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-glow: glow 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 46, 46, 0.15), 0 0 20px rgba(255, 46, 46, 0.05);
+  }
+  100% {
+    box-shadow: 0 0 25px rgba(255, 46, 46, 0.45), 0 0 45px rgba(255, 46, 46, 0.25);
+  }
+}
+
+/* Base resets & scrollbar customizing for premium luxury aesthetic */
+html {
+  scroll-behavior: smooth;
+  background-color: #0A0A0A;
+  color: #FFFFFF;
+}
+
+/* Customized Premium Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0A0A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #141414;
+  border-radius: 4px;
+  border: 2px solid #0A0A0A;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF2E2E;
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: rgba(20, 20, 20, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-navbar {
+  background: rgba(10, 10, 10, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.glass-card {
+  background: linear-gradient(135deg, rgba(20, 20, 20, 0.7) 0%, rgba(10, 10, 10, 0.9) 100%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  border-color: rgba(255, 46, 46, 0.3);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  transform: translateY(-4px);
+}
+
+/* Text Glowing effects */
+.text-glow-red {
+  text-shadow: 0 0 15px rgba(255, 46, 46, 0.6);
+}
+
+.text-glow-white {
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.3);
+}
+
+/* Custom Selection style */
+::selection {
+  background: #FF2E2E;
+  color: #FFFFFF;
+}
+
+/* Custom styling for Masonry Images and Hero overlay */
+.radial-overlay {
+  background: radial-gradient(circle at center, transparent 30%, rgba(10, 10, 10, 0.8) 80%, #0A0A0A 100%);
+}
+
+.bottom-fade {
+  background: linear-gradient(to top, #0A0A0A 0%, transparent 100%);
+}
+
+.top-fade {
+  background: linear-gradient(to bottom, #0A0A0A 0%, transparent 100%);
+}

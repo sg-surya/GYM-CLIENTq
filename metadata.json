@@ -1,0 +1,6 @@
+{
+  "name": "Premium Luxury Gym",
+  "description": "An ultra-modern, high-end luxury fitness brand website designed with matte black, charcoal, and electric red aesthetics, featuring animated stats, interactive AI Coach plans, premium programs, success stories, and booking interfaces.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
